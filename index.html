@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Ticketing</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font RaleWay -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/945603a62f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <!-- <style>
+      .font-raleway {
+        font-family: "Raleway", sans-serif;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style> -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "rgba(29, 209, 0, 1.00)",
+              secondary: "rgba(29, 209, 0, 0.10)",
+            },
+            fontFamily: {
+              RaleWay: "Raleway",
+              Inter: "Inter",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-raleway">
+    <header class="container mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn btn-outline bg-secondary text-primary text-lg"
+              >Bus <i class="fa-solid fa-van-shuttle text-primary"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <!-- banner/hero -->
+      <section class="banner">
+        <div
+          class="hero min-h-[800px] rounded-3xl"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-40 rounded-3xl"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div class="max-w-lg">
+              <h1 class="mb-5 text-6xl font-bold">
+                End-to-End Travel with
+                <span class="text-primary">P-Paribahan</span>
+              </h1>
+              <p class="mb-5">
+                Discover the world's most beautiful destinations and indulge in
+                exquisite experiences through our unique, one-of-a-kind travel
+                packages.
+              </p>
+              <button class="btn outline-none border-none bg-primary font-bold">
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>

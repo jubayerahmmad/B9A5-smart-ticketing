@@ -618,11 +618,131 @@
               >
                 Select Your Seat
               </div>
+              <div class="seat-selected-info p-4 bg-gray-200 rounded-xl mt-4">
+                <!-- table head  -->
+                <div class="flex justify-between">
+                  <p class="flex text-xl font-bold">
+                    Seat
+                    <span
+                      class="bg-primary w-4 h-4 p-2 rounded-full text-white text-sm flex justify-center items-center"
+                      >0</span
+                    >
+                  </p>
+                  <p class="text-xl font-bold">Class</p>
+                  <p class="text-xl font-bold">Price</p>
+                </div>
+                <div
+                  class="border-b-2 border-dashed border-gray-300 mt-4"
+                ></div>
+                <ul class="space-y-2">
+                  <h3 class="font-bold text-2xl text-center mt-2 text-error">
+                    No Seat Booked
+                  </h3>
+                </ul>
+                <div
+                  class="border-b-2 border-dashed border-gray-300 mt-4"
+                ></div>
+                <div class="flex justify-between mt-2">
+                  <p class="font-bold">Total Price:</p>
+                  <p class="font-bold">BDT <span>****</span></p>
+                </div>
+                <div
+                  class="border-b-2 border-dashed border-gray-300 mt-4"
+                ></div>
+                <div class="mt-4 relative">
+                  <input
+                    class="p-4 rounded-xl w-full outline-none"
+                    type="text"
+                    placeholder="Have any Coupon?"
+                    disabled
+                  />
+                  <button
+                    class="btn bg-primary rounded-xl text-white absolute right-1 top-1"
+                    disabled
+                  >
+                    Apply Coupon
+                  </button>
+                </div>
+                <div class="flex justify-between mt-2">
+                  <p class="font-bold">Grand Total:</p>
+                  <p class="font-bold">BDT <span>****</span></p>
+                </div>
+              </div>
+              <!-- form section -->
+              <div class="form-section mt-4 space-y-4">
+                <div>
+                  <label class="font-bold" for="name">Passenger Name*</label>
+                  <input
+                    class="w-full p-2 rounded-xl border-2 border-gray-300 outline-none"
+                    id="name"
+                    type="text"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div>
+                  <label class="font-bold" for="phone">Phone Number*</label>
+                  <input
+                    class="w-full p-2 rounded-xl border-2 border-gray-300 outline-none"
+                    id="phone"
+                    type="number"
+                    placeholder="Your Phone Number"
+                  />
+                </div>
+                <div>
+                  <label class="font-bold" for="address">Address</label>
+                  <input
+                    class="w-full p-2 rounded-xl border-2 border-gray-300 outline-none"
+                    id="address"
+                    type="text"
+                    placeholder="Your Address"
+                  />
+                </div>
+                <button
+                  class="btn bg-primary rounded-xl text-white w-full py-4"
+                  disabled
+                >
+                  Confirm Booking
+                </button>
+                <div class="links flex justify-center gap-4">
+                  <a class="underline" href="">Terms & Conditions</a>
+                  <a class="underline" href="">Cancellation Policy</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-[#030712] text-white">
+      <div class="container mx-auto py-12">
+        <div
+          class="flex justify-between items-center border-b-2 border-white border-dashed pb-12"
+        >
+          <div>
+            <h2 class="text-2xl font-bold">P-Ticket</h2>
+            <p>
+              P-Ticket is a digital platform to make your daily commuting
+              better.
+              <br />
+              <br />
+              Download our app to get the best experience.
+            </p>
+          </div>
+          <div>
+            <p class="text-2xl font-bold">Download App</p>
+            <div class="flex gap-2 p-3 border-2 border-white rounded-xl mt-4">
+              <img src="./images/playstore.png" alt="" />
+              <p>
+                GET IT ON<br />
+                <span class="font-bold">Google Play</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center pt-12">
+          <p>© 2024 P-Ticket. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
